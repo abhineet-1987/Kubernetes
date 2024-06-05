@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx
+  name: mario
+  labels:
+    class: mario
 spec:
   containers:
-  - name: nginx
-    image: nginx:1.14.2
-    ports:
-    - containerPort: 80
+  - name: test
+    image: docker.io/pengbai/docker-supermario
